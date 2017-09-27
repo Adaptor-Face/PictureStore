@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat Room</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="chat.css">
+    </head>
+    <body>
+        <div class="roomContainer">
+            <div>
+                <a>Display Name</a>
+                <input id="alias" type="text"/>
+                <button id="btn"  onclick="buttonFunction()">Set Display Name</button>
+            </div>
+            <h1>Rooms</h1>
+            <div id="rooms"></div>
+            <div id="createNewRoom">
+                <input id="newRoom" type="text" onkeydown="newRoomBtnFunc(event)"/>
+                <button id="newRoomBtn" onclick="newRoomFunc()">Create New Room</button>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Chat Room</h1>
+            <h3 id="chatRoom"></h3>
+            <div id="chat"></div>
+            <input id="message" disabled type="text"/>
+        </div>
+        <script src="chat.js"></script>
+    </body>
+</html>
